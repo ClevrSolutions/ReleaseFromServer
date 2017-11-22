@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="ReleaseFromServer.widget.ReleaseFromServer" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>ReleaseFromServer</name>
+    <description> Instructs the client to send a release request of an associated object.</description>
+    <icon>
+
+    </icon>
+    <properties>
+			<property key="doRollback" type="boolean" defaultValue="false">
+	      <caption>Rollback</caption>
+	      <category>Behavior</category>
+	      <description>Rollsback the object in case a new object is loaded, or page closed.(also releases)</description>
+	  	</property>
+			<property key="doRelease" type="boolean" defaultValue="true">
+	      <caption>Release</caption>
+	      <category>Behavior</category>
+	      <description>Release object when the object is loaded</description>
+	  	</property>
+    </properties>
+</widget>
