@@ -54,7 +54,7 @@ define([
     _updateRendering: function(){
     },
     _checks: function(){
-	    return (this._previousObj != null && (this._contextObj == null || (this._contextObj != null && this._contextObj.getGUID() != this._previousObj.getGUID())));
+	    return (this._previousObj != null && (this._contextObj == null || (this._contextObj != null && this._contextObj.getGuid() != this._previousObj.getGuid())));
     },
     _releaseNow: function(){
     	if(this._checks()){
